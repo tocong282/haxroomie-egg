@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: tocong282/haxroomie-pterodactyl
+  DOCKER_IMAGE: rc0ng/haxroomie-egg
 
 jobs:
   docker:
