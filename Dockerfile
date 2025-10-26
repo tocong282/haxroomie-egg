@@ -1,15 +1,16 @@
 # Dockerfile for Haxroomie-CLI Pterodactyl Yolk
 FROM node:18-bullseye-slim
 
-LABEL author="To COng" maintainer="tothanhcongtv@gmail.com"
+LABEL author="To Cong" maintainer="tothanhcongtv@gmail.com"
 LABEL org.opencontainers.image.source="https://github.com/tocong282/haxroomie-egg"
 LABEL org.opencontainers.image.licenses=MIT
 
-# Set environment variables for Puppeteer
+# Environment variables for Puppeteer
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     PUPPETEER_SKIP_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium \
-    DEBIAN_FRONTEND=noninteractive
+    DEBIAN_FRONTEND=noninteractive \
+    NODE_ENV=production
 
 # Install system dependencies including Chromium
 RUN apt update && apt install -y \
