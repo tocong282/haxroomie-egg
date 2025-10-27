@@ -1,6 +1,6 @@
 # Haxroomie Egg for Pterodactyl
 
-A Docker-based Pterodactyl Egg for running [Haxroomie-CLI](https://github.com/morko/haxroomie-cli), 
+A Docker-based Pterodactyl Egg for running Haxball
 
 
 
